@@ -184,9 +184,9 @@ class MyApp extends connect(store)(LitElement) {
 
       <!-- This gets hidden on a small screen-->
       <nav class="toolbar-list">
-        <a selected?="${_page === 'view1'}" href="/view1">View One</a>
-        <a selected?="${_page === 'view2'}" href="/view2">View Two</a>
-        <a selected?="${_page === 'view3'}" href="/view3">View Three</a>
+        <a selected?="${_page === 'view1'}" href="/view1">HOME</a>
+        <a selected?="${_page === 'view2'}" href="/view2">MUSIC</a>
+        <a selected?="${_page === 'view3'}" href="/view3">ABOUT</a>
       </nav>
     </app-header>
 
@@ -194,9 +194,9 @@ class MyApp extends connect(store)(LitElement) {
     <app-drawer opened="${_drawerOpened}"
         on-opened-changed="${e => store.dispatch(updateDrawerState(e.target.opened))}">
       <nav class="drawer-list">
-        <a selected?="${_page === 'view1'}" href="/view1">View One</a>
-        <a selected?="${_page === 'view2'}" href="/view2">View Two</a>
-        <a selected?="${_page === 'view3'}" href="/view3">View Three</a>
+        <a selected?="${_page === 'view1'}" href="/view1">HOME</a>
+        <a selected?="${_page === 'view2'}" href="/view2">MUSIC</a>
+        <a selected?="${_page === 'view3'}" href="/view3">ABOUT</a>
       </nav>
     </app-drawer>
 
@@ -209,7 +209,7 @@ class MyApp extends connect(store)(LitElement) {
     </main>
 
     <footer>
-      <p>Made with &hearts; by the Polymer team.</p>
+      <p>Made with &hearts; by ThugOfTheWeb</p>
     </footer>
 
     <snack-bar active?="${_snackbarOpened}">
