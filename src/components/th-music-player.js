@@ -37,6 +37,7 @@ class ThMusicPlayer extends LitElement {
             font-size: 16px;
             border: none;
             width: 100%;
+            max-width: 360px;
             padding: 5px;
         }
        
@@ -52,6 +53,7 @@ class ThMusicPlayer extends LitElement {
             <h3 class="title">Beche Theke Labh Ki Bol</h3>
         </div>
       </div>
+      
       <button class="play">
           GET IT NOW
       </button>

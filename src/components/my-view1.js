@@ -21,17 +21,38 @@ class MyView1 extends PageViewElement {
     return html`
       ${SharedStyles}
       <style>
+      .row{
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      
+      @media screen and (min-width: 720px) {
         
+        .row{
+          display: flex;
+        }
+        .col{
+          flex: 50%;
+        }
+    }
       </style>
-      <section>
-        <th-ft-img ftImg="../../images/track-cover.jpg" ftTitle="Track Cover Photo"></th-ft-img>
-      </section>
-      <section>
-        <th-music-player></th-music-player>
-      </section>
-      <section>
-        <th-music-player></th-music-player>
-      </section>
+      <div class="row">
+        <div class="col cover">
+        
+        <section>
+          <th-ft-img ftImg="../../images/track-cover.jpg" ftTitle="Track Cover Photo"></th-ft-img>
+        </section>
+        </div>
+        <div class="col playlist">
+        
+        <section>
+          <th-music-player></th-music-player>
+        </section>
+        <section>
+          <th-music-player></th-music-player>
+        </section>
+        </div>
+      </div>
 
     `;
   }

@@ -34,6 +34,7 @@ import '@polymer/app-layout/app-scroll-effects/effects/waterfall.js';
 import '@polymer/app-layout/app-toolbar/app-toolbar.js';
 import { menuIcon } from './my-icons.js';
 import './snack-bar.js';
+import './th-social.js';
 
 class MyApp extends connect(store)(LitElement) {
   _render({appTitle, _page, _drawerOpened, _snackbarOpened, _offline}) {
@@ -209,6 +210,7 @@ class MyApp extends connect(store)(LitElement) {
     </main>
 
     <footer>
+    <th-social><th-social>
       <p>Made with &hearts; by ThugOfTheWeb</p>
     </footer>
 
